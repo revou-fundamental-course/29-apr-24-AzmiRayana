@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azmi Portofolio</title>
+    <title>Azmi Travel Agent's</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -20,36 +20,71 @@
 
     <section class="content-container">
       <header>
-        <h1>Azmi Portofolio</h1>
-        <h3>Your happiness is our happiness</h3>
+        <h1>Azmi Travel Agent's</h1>
+        <h5>Your happiness is our happiness</h5>
       </header>
       <article class="core-content">
-        <!--image slider start-->
-        <div class="slide-container">
-          <div class="slides"></div>
-          <img url="assets/ocean.jpg" />
-          <img url="assets/porsche.jpg" />
-          <img url="assets/snow.jpg" />
+        <!--slide show-->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/porsche.jpg" style="width: 100%" />
+            <div class="text">Porsche</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/ocean.jpg" style="width: 100%" />
+            <div class="text">Ocean</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/snow.jpg" style="width: 100%" />
+            <div class="text">Winter Snow</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <!--image slider end-->
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
         <div class="core-item item-right">
           <header>
             <h2>Contact Us</h2>
           </header>
 
-          <section class="item-form">
-            <label>Username:</label><br /><input type="text" /> <br />
+          <form class="item-form">
+            <div>
+              <label>Username:</label><br /><input
+                type="text"
+                id="form-username"
+                required
+              />
+              <br />
+              <br />
+              <label>Email Address:</label><br /><input type="text" />
+              <br /><br />
+              <label>What are you interested in?</label><br /><select
+                class="item-form2"
+              >
+                <option value="option1">Opsi 1</option>
+                <option value="option2">Opsi 2</option>
+                <option value="option">Opsi 3</option>
+              </select>
+            </div>
             <br />
-            <label>Email Address:</label><br /><input type="text" />
-            <br /><br />
-            <label>What are you interested in?</label><br /><select
-              class="item-form2"
-            >
-              <option value="option1">Opsi 1</option>
-              <option value="option2">Opsi 2</option>
-              <option value="option">Opsi 3</option>
-            </select>
-          </section>
+            <div>
+              <button type="button" class="send-btn">Send</button>
+            </div>
+          </form>
         </div>
       </article>
 
@@ -57,7 +92,33 @@
         <h1>Our Package</h1>
       </article>
     </section>
+    <article>
+      <div class="">
+        <h3 class="our-package-icon">Bandung</h3>
+        <div>
+          <p>Travel dan wisata di Bandung</p>
 
+          <h3 class="our-package-icon">Bali</h3>
+          <p>Travel dan wisata di Bali</p>
+          <h3 class="our-package-icon">Yogyakarta</h3>
+          <p>Travel dan wisata di Yogyakarta</p>
+        </div>
+      </div>
+    </article>
     <script src="js/script.js"></script>
+    <hr />
+    <section class="content-container">
+      <header>
+        <h1>Your Closing Argument Headline</h1>
+        <h5>Liburan jadi menyenangkan</h5>
+      </header>
+    </section>
+    <article>
+      <div>
+        <button type="button" class="call-to-action-btn">Call To Action</button>
+      </div>
+    </article>
+    <hr />
   </body>
+  <footer>PENUTUP</footer>
 </html>
