@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azmi Travel Agent's</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="navigation-container">
@@ -61,13 +68,14 @@
             <h2>Contact Us</h2>
           </header>
 
-          <form class="item-form">
+          <form action="/action_page.php" method="post" class="item-form">
             <div>
               <label>Username:</label><br /><input
                 type="text"
-                id="form-username"
+                name="form-username"
                 required
               />
+
               <br />
               <br />
               <label>Email Address:</label><br /><input type="text" />
@@ -82,7 +90,9 @@
             </div>
             <br />
             <div>
-              <button type="button" class="send-btn">Send</button>
+              <button class="send-btn" type="submit" value="Submit">
+                Send
+              </button>
             </div>
           </form>
         </div>
@@ -120,5 +130,27 @@
     </article>
     <hr />
   </body>
-  <footer>PENUTUP</footer>
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Our Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-Bottom">
+      <p>
+        Copyright &copy;2024; Designed by <span class="designer">Azmi</span>
+      </p>
+    </div>
+  </footer>
 </html>
